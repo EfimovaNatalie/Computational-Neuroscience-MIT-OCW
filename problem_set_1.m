@@ -134,7 +134,9 @@ plot(autocorr_stim) % central peak corresponds to zero lag, its width ~ 300 ms
 title('Stimulus Autocorrelation')
 autocorr_rho = xcorr(rho, rho, M);
 figure
-plot(autocorr_rho) % we can find much more peaks than for stimulus due to binary data and quite monotonous (similar peak's height and often appear) signal
+plot(autocorr_rho) % we can find much more peaks than for stimulus 
+% due to binary data and quite monotonous (similar peak's height and often appear) signal
+% (cycles in the dynamical systems' behavior correspond to the maxima of the autocorrelation function)
 title('Spike Train Aturocorrelation') 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
